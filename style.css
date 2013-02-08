@@ -1,0 +1,331 @@
+@import url(http://fonts.googleapis.com/css?family=Syncopate|Fredoka+One);
+
+@font-face {
+   font-family: 'arista';
+   src: url('arista.ttf');
+}
+
+header {
+   font-family: 'Syncopate', sans-serif;
+
+   position: fixed;
+
+   padding-top: 150px;
+   width: 100%;
+   text-align: center;
+
+   letter-spacing: 1px;
+   word-spacing: 10px;
+   
+   background-color: white;
+   z-index: 300;
+}
+
+#firstintro {
+   margin-top: 200px;
+   font-family: 'Syncopate', sans-serif;
+}
+
+#portrait {
+   width: 300px;
+   right: 50%;
+   padding-right: 15px;
+}
+p#intro {
+   left: 50%;
+   width: 300px;
+   height: 344px;
+   padding-top: 140px;
+   padding-left: 15px;
+}
+#pointer {
+   position: relative;
+   width: 0;
+   height: 0;
+   border-left: 300px solid transparent;
+   border-right: 300px solid transparent;
+
+   border-top: 80px solid grey;
+   text-align: center;
+
+   left: 50%;
+   margin-left: -300px;
+}
+#pointer:after {
+   content: "Scroll";
+   position: absolute;
+   margin-left: -100px;
+   width: 200px;
+   top: -50px;
+   z-index: 45;
+   color: white;
+
+   font-family: 'Syncopate', sans-serif;
+   letter-spacing: 3px;
+   word-spacing: 8px;
+}
+
+h2 {
+   font-weight: normal;
+   position:absolute;
+}
+
+#tools {
+   top: 0px;
+   left: 0px;
+   width:100%;
+   height:100%;
+
+   z-index: 301;
+
+   font-family: 'Fredoka One', cursive;
+}
+
+#ruby {
+   float: right;
+   background-color: black;
+   left:-20%;
+   
+   top: 30%;
+   height:40px;
+   } 
+
+.ruby {
+   border-style: solid;
+   border-color: transparent transparent #7D0000 transparent;
+   border-width: 0 25px 25px 25px;
+   height: 0;
+   width: 50px;
+   position: relative;
+   margin: 20px 0 50px 0;
+
+   float: right;
+   margin-top: -25px;
+   margin-right: -40px;
+}
+.ruby:after {
+   content: "";
+   position: absolute;
+   top: 25px;
+   left: -25px;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-color: #7D0000 transparent transparent transparent;
+   border-width: 70px 50px 0 50px;
+}
+
+#python {
+   background-color: black;
+   width: 40px;
+   left: 80%;
+   top: -20%;
+   margin: 0;
+}
+
+#python img {
+   margin-left: -36px;
+   position: absolute;
+   bottom: -40px;
+}
+
+#php {
+   height: 20%;
+   bottom: 0%;
+   top: 80%;
+   position: absolute;
+}
+
+#car { /*top*/
+   position: fixed;
+   bottom: 42px;
+
+   width: 50px;
+
+   border-style: solid;
+   border-color: transparent transparent black transparent;
+   border-width: 0px 20px 27px 20px;
+}
+#car:after {
+   content: "";
+
+   position: fixed;
+   width: 150px;
+   margin-left: -40px;
+
+   margin-top: 27px;
+   height: 30px;
+   background-color: black;
+
+   border-radius: 5px;
+}
+#wheels, #wheels:after {
+   width:30px;
+   height:30px;
+   background-color:black;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
+}
+
+#wheels {
+   position: fixed;
+   margin-left: -12px;
+   bottom: -2px;
+}
+
+#wheels:after {
+   position: fixed;
+   content: "";
+   background-color:black;
+   margin-left: 100px;
+}
+
+#php-logo {
+   position: fixed;
+   left: 50%;
+}
+
+#jquery, #html5, #css3 {
+   background-color: black;
+   border-top-left-radius: 20px 20px;
+   border-top-right-radius: 20px 20px;
+   width: 40px;
+}
+
+#html5  { left: 260px; height: 19%; }
+#css3   { left: 390px; height: 14%; }
+#jquery { left: 520px; height: 9%; }
+
+#jquery img { margin-left: -23px; margin-top: -65px; }
+#html5 img { margin-left: -44px; margin-top: -108px; }
+#css3 img { margin-left: -25px; margin-top: -97px;width: 104px;  }
+
+
+#inner {
+   position: fixed;
+   left:50%;
+   top:50%;
+
+   z-index: -90;
+   background-color: white;
+   border-radius: 100%;
+   -moz-border-radius: 100%;
+   -o-border-radius: 100%;
+   -webkit-border-radius: 100%;
+}
+
+#thanks {
+   font-size: 120px;
+   font-family: 'arista';
+   position: fixed;
+   left:0%;
+   width:100%;
+   top:10%;
+}
+
+
+#thanks #first {
+   margin-left: 20%;
+}
+#thanks #second {
+   margin-left: 36%;
+}
+
+#end {
+   z-index:-101;
+   position: fixed;
+   top:0%;
+   height:100%;
+   width:100%;
+   left:0%;
+   background-color: black;
+}
+
+#stars {
+   z-index: -95;
+   position: fixed;
+   left: 0%;
+   top: 0%;
+   height: 100%;
+   width: 100%;
+}
+
+.star {
+   position: fixed;
+}
+.tiny {
+   width: 1px;
+   height: 1px;
+}
+.small {
+   width:2px;
+   height:2px;
+}
+.large {
+   width: 3px;
+   height: 3px;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -o-border-radius: 5px;
+   -webkit-border-radius: 5px;
+}
+
+#github img {
+   width: 65px;
+}
+
+#social-media {
+   position: fixed;
+   top: 300px;
+}
+#twitter {
+   margin-bottom: 10px;
+}
+#twitter:hover {
+   cursor: pointer;
+}
+#github {
+   margin-left: 8px;
+}
+
+#email {
+   top: 420px;
+   margin-right: -246px;
+   padding-left: 22px;
+   padding-right: 10px;
+   padding-top: 15px;
+   padding-bottom: -7px;
+   height: 40px;
+   background-color: white;
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+   font-family: 'Lucidia sans Unicode', 'Lucidia Grande', sans-serif;
+   font-weight: bold;
+
+   border-radius: 7px 0 0 7px;
+}
+#email:hover {
+   margin-right: -5px;
+}
+#email a:link {
+      color: #292929;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: normal;
+   }
+
+.rotate {
+   /* Safari */
+   -webkit-transform: rotate(-90deg);
+   /* Firefox */
+   -moz-transform: rotate(-90deg);
+   /* IE */
+   -ms-transform: rotate(-90deg);
+   /* Opera */
+   -o-transform: rotate(-90deg);
+   /* Internet Explorer */
+   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
